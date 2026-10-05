@@ -1,0 +1,8 @@
+incident_id,date,tool_name,incident_type,claimed_behavior,actual_behavior,time_cost_hours,severity,resolved,notes
+1,2026-09-03,Cursor,quality,"Correct async error handling","Missing await caused race condition",2.5,medium,yes,"Found during integration test; required rewrite of three functions"
+2,2026-09-07,Cursor,quality,"Optimal database query","N+1 query pattern in loop",1.0,low,yes,"Caught in code review; refactored to single query"
+3,2026-09-12,Cursor,speed,"Faster autocomplete","3-second delay on large file edit",0.25,low,no,"Breaks flow when editing 500+ line files; no workaround found"
+4,2026-09-15,Cursor,quality,"Correct edge case handling","Unhandled None in optional parameter",0.5,low,yes,"Shipped to staging; caught by QA"
+5,2026-09-18,Cursor,reliability,"Context-aware suggestions","Suggested deprecated API method",0.75,low,yes,"Docs were clear; tool ignored version context"
+6,2026-09-22,Cursor,quality,"Thread-safe code","Shared state mutation without lock",3.0,high,yes,"Found during load testing; required rearchitecture of caching layer"
+7,2026-09-25,Cursor,speed,"Rapid refactoring","Incorrect symbol rename across files",1.5,medium,yes,"Missed three references in test files; manual grep required"
